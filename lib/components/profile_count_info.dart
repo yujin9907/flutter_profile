@@ -7,19 +7,36 @@ class ProfileCountInfo extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        _buildInfo(),
+        _buildInfo("50", "Posts"),
         _buildLine(),
-        _buildInfo(),
+        _buildInfo("10", "Likes"),
         _buildLine(),
+        _buildInfo("3", "Share"),
       ],
     );
   }
 
-  _buildInfo() {
-    return SizedBox();
+  _buildInfo(String c, String t) {
+    return Column(
+      children: [
+        Text(
+          c,
+          style: TextStyle(fontSize: 15),
+        ),
+        SizedBox(height: 2,),
+        Text(
+          t,
+          style: TextStyle(fontSize: 15),
+        ),
+      ],
+    );
   }
 
   _buildLine() {
-    return SizedBox();
+    return Container(
+        width: 2,
+        height: 60,
+        color: Colors.blue,
+    );
   }
 }
