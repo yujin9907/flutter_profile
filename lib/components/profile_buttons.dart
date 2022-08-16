@@ -15,23 +15,24 @@ class ProfileButtons extends StatelessWidget {
 
   // 컨테이너를 디자인 후 그걸 인크웰로 감싼 구조
   _buildFollowButton() {
+    // return OutlinedButton(onPressed: onPressed, child: child); 이렇게 쉽게 할 수 있음
+    // 직접 만드는 방법으로 해 볼 것
     return InkWell(
-      onTap: () {
-        print("follow button click");
+      onTap:(){
+        print("Follow 클릭됨");
       },
       child: Container(
         alignment: Alignment.center,
         width: 150,
-        height: 45,
+        height: 56,
         child: Text(
           "Follow",
           style: TextStyle(color: Colors.white),
         ),
         decoration: BoxDecoration(
-          color: Colors.blue,
-          borderRadius: BorderRadius.circular(10),
+
         ),
-      ),
+      )
     );
   }
 

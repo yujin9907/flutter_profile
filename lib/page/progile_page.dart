@@ -32,7 +32,7 @@ class ProfilePage extends StatelessWidget {
   // 위젯 앱바에 대해서 ; 뭐 어쩌라고.. 자동으로 뭐가 변하는 어쩌고 했음 뒤로가기 그런거
   AppBar _buildProfileAppBar(){
     return AppBar(
-      // backgroundColor: Colors.white,
+      backgroundColor: Colors.white,
       leading: Icon(Icons.arrow_back_ios),
       title: Text("Profile", style: TextStyle(color: Colors.black),),
       centerTitle: true,
